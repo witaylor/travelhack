@@ -1,0 +1,64 @@
+.mobile-header-container {
+    --mobile-nav-bottom-border: 3pt solid rgb(255, 210, 0);
+    border-top: none;
+    border-bottom: var(--mobile-nav-bottom-border);
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.mobile-header-navigation {
+    display: flex;
+    min-width: 100%;
+}
+
+.logo-link {
+    max-height: 10vh;
+    padding: 1em;
+}
+
+.logo-link-mobile {
+    justify-content: flex-start;
+}
+
+.mobile-nav-container-expanded {
+    background-color: var(--expedia-blue-color);
+    border-bottom: var(--mobile-nav-bottom-border);
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    width: 100%;
+}
+
+.mobile-nav-container-hidden {
+    display: none;
+}
+
+.mobile-nav-button {
+    min-width: 100%;
+    font-size: 2em;
+    padding: 5pt;
+    margin: 5pt 2.5pt;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    margin: auto 1em;
+}
+
+.hamburger-line {
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 999px;
+}
+
+@media screen and (max-width: 750px) {
+    .mobile-header-container { display: flex; }
+}

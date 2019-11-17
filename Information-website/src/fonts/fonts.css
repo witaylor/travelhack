@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'EG Display';
+    src:  url('ExpediaGroupDisplay-Bold.woff2') format('woff2'),
+          url('ExpediaGroupDisplay-Bold.woff') format('woff');
+}

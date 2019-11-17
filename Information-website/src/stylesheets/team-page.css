@@ -1,0 +1,37 @@
+.list-block-container {
+    padding-top: 0;
+}
+
+.volunteer-card-flex {
+    display: flex;
+
+    padding: 1em 2em 1em 1em;
+    margin: 0 -1em 1em;
+}
+
+.volunteer-list {
+    list-style: none;
+}
+
+.volunteer-image-container {
+    padding: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volunteer-image-container img {
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px var(--drop-shadow-color);
+
+    height: 125pt;
+    width: 125pt;
+}
+
+@media screen and (max-width: 650px) {
+    .volunteer-card-flex {
+        flex-direction: column;
+    }
+}

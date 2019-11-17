@@ -1,0 +1,59 @@
+.first-scenario {
+    margin: 1em 0 3em;
+}
+
+.last-scenario {
+    margin: 3em 0 1em;
+}
+
+.scenario-wrapper {
+    border-radius: 10px;
+    border: 2px solid var(--default-scenario-border-color);
+    margin: 3em 0;
+
+    position: relative;
+}
+
+.scenario-wrapper-hcom { border: 2px solid var(--hcom-red-color); }
+.scenario-wrapper-hcom .scenario-logo-wrapper { border: 2px solid var(--hcom-red-color); }
+
+.scenario-wrapper-bex  { border: 2px solid var(--expedia-blue-color); }
+.scenario-wrapper-bex .scenario-logo-wrapper { border: 2px solid var(--expedia-blue-color); }
+
+.scenario-wrapper-vrbo { border: 2px solid #305BB6; }
+.scenario-wrapper-vrbo .scenario-logo-wrapper { border: 2px solid #305BB6; }
+
+.scenario-logo-wrapper {
+    background-color: white;
+    padding: 0.25em 0.5em;
+
+    height: 20pt;
+    min-width: 100pt;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--drop-shadow-color);
+
+    position: absolute;
+    top: -15pt;
+    left: 20pt;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scenario-logo-wrapper img {
+    height: 100%;
+}
+
+.scenario-content {
+    padding: 0.5em 1em;
+}
+
+.scenario-content h1 {
+    margin-bottom: 0;
+}
+
+.scenario-content p {
+    margin-top: 0.5em;
+}

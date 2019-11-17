@@ -1,0 +1,30 @@
+/* INTRODUCTION TEXT */
+
+.introduction-container { display: flex; }
+
+.introduction-card {
+    flex: 4;
+    margin-right: 1em;
+}
+
+.countdown-wrapper {
+    flex: 1;
+}
+
+/* ICEBREAKERS */
+
+.icebreaker-container hr {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* RESPONSIVE QUERIES */
+
+@media screen and (max-width: 750px) {
+    .introduction-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .introduction-card { margin-right: 0; }
+}

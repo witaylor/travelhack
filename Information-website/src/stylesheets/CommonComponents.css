@@ -1,0 +1,150 @@
+/* PAGE */
+.common-page {
+    max-width: var(--max-page-width);
+    margin: var(--nav-bar-height, 10vh) auto 0;
+    padding: 1em;
+}
+
+/* CARD */
+
+.common-bg-card {
+    background-color: var(--main-card-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--drop-shadow-color);
+    margin: 0 0 1em;
+    padding: 1em 2em;
+    overflow: hidden;
+}
+
+.card-always-light {
+    background-color: var(--main-card-color-light, var(--main-card-color));
+}
+
+/* LINK BUTTON */
+
+.link-button {
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 0.75em 2em;
+    cursor: pointer;
+    color: black;
+    background-color: var(--expedia-yellow-color);
+    box-shadow: 0 2px 10px 5px var(--drop-shadow-color);
+    transition: 0.3s all;
+    text-decoration: none;
+}
+
+.link-button:hover {
+    transform: scale(1.05);
+}
+
+.link-button:active {
+    transform: scale(1);
+}
+
+.link-button span {
+    margin: 0;
+}
+
+/* EXPANDING SECTION */
+
+.expanding-section-container {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    text-transform: capitalize;
+}
+
+.expanding-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.expanding-section h2 {
+    flex: 1;
+}
+
+.expanding-section p {
+    font-size: 1em;
+    text-decoration: underline;
+    margin: auto 2em;
+    cursor: pointer;
+}
+
+/* COUNTDOWN TIMER */
+
+.countdown-text-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto 0;
+}
+
+.countdown-text-container h3 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: monospace;
+}
+
+.countdown-text-container h4 {
+    margin: 0;
+    color: darkgrey;
+}
+
+.countdown-name {
+    margin: auto 0;
+    text-align: center;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar-wrapper {
+    width: 100%;
+    padding: 0 1em;
+}
+
+.progress-bar {
+    background: var(--expedia-yellow-color);
+    border-radius: 10pt;
+    flex: 1;
+    height: 20pt;
+    min-width: 10pt;
+    display: flex;
+    text-align: right;
+}
+
+.progress-text {
+    flex: 1;
+    margin:auto 0.5em;
+    padding: 0;
+    color: black;
+    font-weight: bolder;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    border: 3px solid var(--search-bar-border-color);
+    border-radius: 10px;
+
+    background-color: transparent;
+    color: var(--main-text-color);
+
+    min-height: 30pt;
+    flex: 1;
+
+    padding: 0 1em;
+    font-size: 1em;
+    outline: none;
+
+    transition: 0.2s all;
+}
+
+.search-bar input[type="text"]:focus {
+    border: 3px solid var(--hcom-red-color);
+    transform: scale(1.025);
+}

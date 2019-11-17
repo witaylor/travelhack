@@ -1,0 +1,99 @@
+/* Import the fonts loaded in fonts.css */
+@import url("fonts/fonts.css");
+
+html {
+  /* COLOURS */
+  --main-bg-color: rgba(239, 239, 239, 1);
+  --main-card-color-light: rgba(255, 255, 255, 1);
+  --main-card-color-dark: rgba(25, 25, 25, 1);
+  --main-card-color: var(--main-card-color-light, rgba(255, 255, 255, 1));
+  --main-text-color: rgba(0,0,0,1);
+
+  --header-background-color: rgba(0, 53, 95, 1);
+
+  --expedia-blue-color: rgba(0, 53, 95, 1);
+  --expedia-yellow-color: rgba(255,210,0, 1);
+
+  --hcom-red-color: #CB2C30;
+
+  --drop-shadow-color: #dedede;
+  --header-drop-shadow-color: rgba(0,0,0,0.5);
+
+  --search-bar-border-color: rgba(0,0,0,1);
+  --search-bar-border-color-focused: var(--hcom-red-color);
+
+  --api-list-hover-color: rgba(0,0,0,0.3);
+
+  --default-scenario-border-color: rgba(0,0,0,0.5);
+
+  /* DIMENSIONS */
+  --nav-bar-height: 10vh;
+  --max-page-width: 750pt;
+
+  min-height: 100%;
+  background-color: var(--main-card-color);
+}
+
+html[theme='dark'] {
+  /* COLOURS */
+  --main-bg-color: rgba(51, 51, 51, 1);
+  --main-card-color: var(--main-card-color-dark, rgba(25, 25, 25, 1));
+  --main-text-color: rgba(255,255,255,0.99);
+
+  --header-background-color: rgba(25, 25, 25, 1);
+
+  --drop-shadow-color: rgba(0,0,0,0.4);
+  --header-drop-shadow-color: rgba(0,0,0,0.5);
+
+  --search-bar-border-color: rgba(255,255,255,0.9);
+
+  --api-list-hover-color: rgba(255,255,255,0.1);
+
+  --default-scenario-border-color: rgba(255,255,255,0.9);
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: ease-in-out 200ms !important;
+  transition-delay: 0 !important;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: century-gothic, AppleGothic, sans-serif;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.App {
+  background-color: var(--main-bg-color);
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul, ol { padding: 0; }
+
+h1, h2 { font-family: 'EG Display', 'Century Gothic', Arial , sans-serif; }
+
+h1,h2,h3,p,a, li { color: var(--main-text-color); }
+
+li { margin: 0.2em 1.25em; }
+
+@media screen and (max-width: 750px) {
+  .flex-centered {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,28 @@
+.api-list-wrapper ul {
+    list-style: none;
+}
+
+.api-list-wrapper ul li {
+    margin: 0;
+    padding: 0.5em 0;
+    cursor: pointer;
+}
+
+.api-list-wrapper ul li:hover {
+    margin: 0 -1em;
+    padding: 0.5em 1em;
+
+    background: var(--api-list-hover-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px var(--drop-shadow-color);
+}
+
+.api-list-wrapper ul li a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.api-list-wrapper ul li a h3 {
+    margin: 0;
+}
+

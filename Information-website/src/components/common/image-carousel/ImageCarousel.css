@@ -1,0 +1,47 @@
+.photo-carousel {
+    position: relative;
+    height: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 10pt;
+    margin-bottom: 1em;
+}
+
+.photo-slide-wrapper {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform ease-out 0.45s;
+}
+
+.photo-slide {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 60%;
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform ease-in .1s;
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+}
+
+.nextArrow {
+    right: 25px;
+}
+
+.backArrow {
+    left: 25px;
+}
