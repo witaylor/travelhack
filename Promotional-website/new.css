@@ -1,0 +1,390 @@
+@font-face {
+    font-family: 'EG Display';
+    src:  url('res/fonts/ExpediaGroupDisplay-Bold.woff2') format('woff2'),
+          url('res/fonts/ExpediaGroupDisplay-Bold.woff') format('woff');
+}
+
+@keyframes float {
+    to { transform: translateY(2.5pt) }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 1.15em;
+    letter-spacing: 0.02em;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+h1 {
+    font-family: 'EG Display', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: calc(2em + 3vw);
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    min-height: 100vh;
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    scroll-snap-align: start;
+}
+
+.content-wrapper {
+    max-width: 750pt;
+    min-height: 75vh;
+    height: 100%;
+
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-wrapper-wide {
+    max-width: 1080pt;
+}
+
+.info-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 1em auto;
+    height: 100%;
+}
+
+.info {
+    flex: 1;
+    min-height: 100%;
+}
+
+.info p {
+    font-size: 1.1em;
+    color: #000;
+    margin: 0;
+}
+
+.p-emoji {
+    max-height: 1.5em;
+}
+
+/* LANDING PAGE */
+
+.home-content-wrapper {
+    background: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10pt;
+
+    position: relative;
+    max-width: 80%;
+
+    box-shadow: 0 0 20pt 0pt rgba(0,0,0,0.3);
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-wrapper img {
+    min-height: 33vh;
+}
+
+.logo-wrapper {
+    max-width: 100%;
+}
+
+.logo-wrapper img {
+    max-width: 100%;
+}
+
+.logo-wrapper h2 {
+    font-size: 1em;
+    text-align: center;
+}
+
+.logo-wrapper h3 {
+    font-size: .8em;
+
+    margin-top: 1em;
+    margin-bottom: 0;
+
+    text-align: center;
+}
+
+.event-date-heading {
+    /* font-family: 'Mansalva', "Century Gothic", CenturyGothic, AppleGothic, sans-serif; */
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 2.5em;
+    margin: 4pt 0;
+}
+
+.cta-button {
+    border: none;
+    box-shadow: 0 0 5pt 0pt rgba(0,0,0,0.3);
+    border-radius: 10pt;
+    outline: none;
+    border: 2px solid #FFC60B;
+    background-color: #FFC60B;
+    font-size: 1em;
+    padding: 1em 2em;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1em;
+}
+
+.cta-button-ghost {
+    border: 2px solid #FFC60B;
+    font-size: 0.9em;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 1em 0;
+}
+
+.cta-button:hover {
+    transform: scale(1.02);
+}
+
+.scroll-button-wrapper {
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    max-width: 50vw;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-button {
+    background: white;
+    margin: 0 auto;
+    padding: 0 1em 0 0;
+    border-radius: 500pt;
+
+    color: black;
+    text-align: center;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.9em;
+    text-decoration: none;
+
+    cursor: pointer;
+    box-shadow: 0 0 20pt 0pt rgba(0,0,0,0.3);
+
+    animation: float 0.75s ease-in-out 0s infinite alternate;
+}
+
+.scroll-button i {
+    font-size: 2.5em;
+    margin-right: 0.2em;
+}
+
+.scroll-button p {
+    margin: 0;
+}
+
+/* WHAT PAGE */
+
+.join-slack-cta {
+    min-height: 2em; 
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.join-slack-cta a {
+    background-color: #fff;
+    padding: 1em 2em;
+    color: black;
+    border-radius: 5pt;
+    text-decoration: none;
+    box-shadow: 0 0 5pt 1pt rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.join-slack-cta a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 10pt 1pt rgba(0,0,0,0.5);
+}
+
+/* WHEN PAGE */
+
+.polaroid-img-wrapper {
+    background: white;
+    padding: 0.5em;
+    padding-bottom: 0;
+    max-width: 75%;
+    margin: 1em auto;
+}
+
+.polaroid-img-wrapper img {
+    max-width: 100%;
+}
+
+.polaroid-img-wrapper p {
+    font-family: 'Mansalva', "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    max-height: 20pt;
+    padding: 0.5em;
+    margin: 0;
+}
+
+/* WHERE PAGE */
+
+.google-map-wrapper {
+    border-radius: 10pt;
+    overflow: hidden;
+    padding-top: 50%;
+    position: relative;
+    height: 200pt;
+    margin: 0 2em;
+}
+
+.google-map-wrapper iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* HOW PAGE */
+
+.apply-button-wrapper {
+    padding: 2em 0 1em;
+    display: flex;
+}
+
+.apply-button-wrapper a {
+    background-color: #fff;
+    padding: 1em 2em;
+    text-align: center;
+    color: black;
+    border-radius: 5pt;
+    text-decoration: none;
+    box-shadow: 0 0 7pt 2pt rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.apply-button-wrapper a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 10pt 3pt rgba(0,0,0,0.5);
+}
+
+.post-it-note {
+    background: rgb(235, 199, 52);
+    padding: 3em 1em;
+    max-width: 310pt;
+    box-shadow: 0 0 7pt 2pt rgba(0,0,0,0.5);
+    min-width: 310pt;
+
+    font-family: 'Mansalva', "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+    transform: rotate(10deg);
+}
+
+.post-it-note-mobile {
+    background: rgb(235, 199, 52);
+    padding: 1em;
+    box-shadow: 0 0 7pt 2pt rgba(0,0,0,0.5);
+    font-family: 'Mansalva', "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+
+    display: none;
+}
+
+.p-padded-right {
+    padding-right: 5em;
+}
+
+/* RESPONSIVE CSS */
+
+@media screen and (max-width: 750px) {
+
+    #hide-on-mobile { display: none; }
+
+    body {
+        scroll-snap-type: none;
+        scroll-snap-type: y none;
+    }
+
+    .home-content-wrapper { 
+        margin: 1em;
+     }
+
+    .scroll-button { display: none; }
+
+    .p-padded-right { padding: 0; }
+
+    button { max-width: 100%; width: 100%; }
+
+    .post-it-note-mobile { display: static; }
+
+    .post-it-note {
+        display: none;
+    }
+
+    .event-date-heading {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .info-wrapper {
+        display: block;
+    }
+
+    .google-map-wrapper {
+        position: static;
+
+        /* max-height: 100px; */
+        max-width: 100%;
+
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    .google-map-wrapper iframe {
+        position: static;
+    }
+
+    .info p {
+        font-size: 1em;
+    }
+
+    .polaroid-img-wrapper {
+        display: none;
+    }
+
+}
