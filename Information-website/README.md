@@ -9,7 +9,7 @@ Before you make any changes to this website, please **fork or download it** and 
 ## How to update it for your hackathon
 The feedback on this website was that it was *very* useful. We wanted to give you the opportunity to use it too, but realised that not everyone is going to know how React works (or want to learn it) so we wanted to make it as easy as possible for you to re-use. For this reason, all essential information that may be changed, such as the list of volunteers, has been extracted out into a separate JavaScript file - [constants.js](./src/constants.js).
 
-Here you can update the list of events and timings, and add information on the team. The structure of each thing is quite strict, things may break or behave strangely if you don't keep the same structure. My goal was to go through and make everything as robust as possible, but I ran out of time. Here are how things are structured, in order of how they appear in `constants.js`:
+Here you can update the list of events and timings, and add information on the team. The structure of each thing is quite strict, stuff may break or behave strangely if you don't keep the same structure. My goal was to go through and make everything as robust as possible, but I ran out of time. Here are how things are structured, in order of how they appear in `constants.js`:
 
 **Note: All date/time strings follow the same pattern: "Month Date, Year hh:mm:ss"**
 *for example, "December 31, 2019 23:59:59"*
