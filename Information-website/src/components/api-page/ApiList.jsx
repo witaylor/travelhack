@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import '../../old_stylesheets/ApiPage.css'
 import '../../stylesheets/api-page.css';
 
 export default class ApiList extends Component {
@@ -15,23 +14,22 @@ export default class ApiList extends Component {
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         fetch("https://api.publicapis.org/entries?category="+this.state.category+"&https=true")
-            .then(res => res.json())
-            .then(result => {
-                    const links = result.entries.map(entry => { return entry.Link });
-                    const names = result.entries.map(entry => { return entry.API });
-                    const descriptions = result.entries.map(entry => { return entry.Description });
-                    this.setState({
-                        links: links,
-                        names: names,
-                        descriptions: descriptions,
-                        isLoading: false
-                    })
-                }, (error) => {
-                    this.setState({ error })
-                }
-            )
+        .then(res => res.json())
+        .then(result => {
+            const links = result.entries.map(entry => { return entry.Link });
+            const names = result.entries.map(entry => { return entry.API });
+            const descriptions = result.entries.map(entry => { return entry.Description });
+            this.setState({
+                links: links,
+                names: names,
+                descriptions: descriptions,
+                isLoading: false
+            })
+        }, (error) => {
+                this.setState({ error })
+        })
     }
 
     render() {
