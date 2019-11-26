@@ -11,7 +11,7 @@ The feedback on this website was that it was *very* useful. We wanted to give yo
 
 Here you can update the list of events and timings, and add information on the team. The structure of each thing is quite strict, stuff may break or behave strangely if you don't keep the same structure. My goal was to go through and make everything as robust as possible, but I ran out of time. Here are how things are structured, in order of how they appear in `constants.js`:
 
-**Note: All date/time strings follow the same pattern: "Month Date, Year hh:mm:ss"** *(for example, "December 31, 2019 23:59:59")*
+**Note: All date/time strings follow the same pattern: "Month Date, Year hh:mm:ss"** *(for example, "December 31, 2019 23:59:59")*.
 
 ### Icebreakers
 ```javascript
