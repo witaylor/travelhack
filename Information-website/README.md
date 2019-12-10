@@ -52,6 +52,6 @@ The same structure is followed for the recruiters, volunteers and judges (and ot
 We've tried to stay true to Expedia Groups colours but, if you want to change them, it's easy to do so! Just go to [App.css](./src/App.css) and change the colour variables to whatever you like - just remember to make sure it works in both the light & dark themes.
 
 ## Still confused?
-If you want to make use of the website but still aren't sure, [reach out to me over email](mailto:will_taylor13@outlook.com).
+If you want to make use of the website but still aren't sure, reach out to [me](mailto:will_taylor13@outlook.com) or [Alfie](mailto:alfiewn@gmail.com) over email.
 
 
